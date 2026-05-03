@@ -1,0 +1,40 @@
+  <div class="slh-field"
+       [class]="`sl`">
+    @if (label()) {
+      <label class="slh-field__label"
+             [class]="labelPosition()">{{ label() }}</label>
+    }
+    <slh-field-message>
+      <div class="slh-field__container">
+        <ng-content select="[fieldContainer]"></ng-content>
+        <ng-content select="[secondaryContainer]"></ng-content>
+      </div>
+    </slh-field-message>
+  </div>
+
+<!-- 
+@if (isTopLabel()) {
+  <div class="slh-field slh-field--top-label">
+    @if (label()) {
+      <label class="slh-field__label slh-field__label--top">{{ label() }}</label>
+    }
+    <slh-field-message>
+      <div class="slh-field__container">
+        <ng-content select="[fieldContainer]"></ng-content>
+        <ng-content select="[secondaryContainer]"></ng-content>
+      </div>
+    </slh-field-message>
+  </div>
+} @else {
+  <div class="slh-field slh-field--left-label">
+    @if (label()) {
+      <label class="slh-field__label slh-field__label--left">{{ label() }}</label>
+    }
+    <slh-field-message>
+      <div class="slh-field__container">
+        <ng-content select="[fieldContainer]"></ng-content>
+        <ng-content select="[secondaryContainer]"></ng-content>
+      </div>
+    </slh-field-message>
+  </div>
+} -->
