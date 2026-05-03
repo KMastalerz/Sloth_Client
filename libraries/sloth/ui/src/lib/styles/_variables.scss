@@ -1,0 +1,41 @@
+:root {
+    /* Foundation spacing scale (do not tie names to component meaning) */
+    --slh-space-0: 0;
+    --slh-space-1: 2px;
+    --slh-space-2: 4px;
+    --slh-space-3: 8px;
+    --slh-space-4: 12px;
+    --slh-space-5: 16px;
+    --slh-space-6: 24px;
+    --slh-space-7: 32px;
+
+    --slh-radius-1: 4px;
+    --slh-radius-2: 8px;
+    --slh-radius-3: 16px;
+    --slh-radius-full: 9999px;
+
+    --slh-size-1: 8px;
+    --slh-size-2: 12px;
+    --slh-size-3: 16px;
+    --slh-size-4: 20px;
+    --slh-size-5: 24px;
+    --slh-size-6: 32px;
+
+    /* Component aliases: control field */
+    --slh-control-field-gap: var(--slh-space-1);
+    --slh-control-field-label-gap-top: var(--slh-space-1);
+    --slh-control-field-label-gap-left: var(--slh-space-2);
+    --slh-control-field-label-offset-inline: var(--slh-space-1);
+    --slh-control-field-message-offset-inline: var(--slh-space-1);
+
+    /* Component aliases: control input */
+    --slh-control-input-height: 2em;
+    --slh-control-input-gap: var(--slh-space-1);
+    --slh-control-input-inner-gap: var(--slh-space-2);
+    --slh-control-input-radius: var(--slh-radius-2);
+    --slh-control-input-padding-block: var(--slh-space-2);
+    --slh-control-input-padding-inline: var(--slh-space-2);
+    --slh-control-input-icon-size: 1em;
+    --slh-control-input-button-size: 1.25em;
+
+}

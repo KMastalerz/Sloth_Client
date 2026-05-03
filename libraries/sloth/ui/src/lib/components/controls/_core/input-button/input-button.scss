@@ -1,0 +1,19 @@
+@use "../../../../styles/controls" as *;
+
+.slh-input-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $control-input-height;
+    height: $control-input-height;
+    background-color: $control-input-button-surface;
+
+    slh-icon {
+    --icon-size: #{$control-input-button-size};
+    --icon-clr: #{$control-input-button-color};
+    }
+
+    &:hover {
+        background-color: $control-input-button-surface-hover;
+    }
+}

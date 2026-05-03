@@ -2,9 +2,106 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "yarn"
   },
   "newProjectRoot": "projects",
   "projects": {
+    "sloth-ui": {
+      "projectType": "library",
+      "root": "libraries/sloth/ui",
+      "sourceRoot": "libraries/sloth/ui/src",
+      "prefix": "slh",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "libraries/sloth/ui/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libraries/sloth/ui/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "libraries/sloth/ui/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "sloth": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/sloth",
+      "sourceRoot": "projects/sloth/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "projects/sloth/src/main.ts",
+            "tsConfig": "projects/sloth/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "libraries/sloth/ui/src/lib/styles"
+              ]
+            },
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/sloth/public"
+              }
+            ],
+            "styles": ["projects/sloth/src/styles.scss"]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "sloth:build:production"
+            },
+            "development": {
+              "buildTarget": "sloth:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test"
+        }
+      }
+    }
   }
 }

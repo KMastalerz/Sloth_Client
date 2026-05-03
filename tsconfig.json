@@ -12,6 +12,9 @@
     "isolatedModules": true,
     "experimentalDecorators": true,
     "importHelpers": true,
+    "paths": {
+      "@sloth/ui": ["./dist/libs/sloth/ui"]
+    },
     "target": "ES2022",
     "module": "preserve"
   },
@@ -21,5 +24,19 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   },
-  "files": []
+  "files": [],
+  "references": [
+    {
+      "path": "./libraries/sloth/ui/tsconfig.lib.json"
+    },
+    {
+      "path": "./libraries/sloth/ui/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/sloth/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/sloth/tsconfig.spec.json"
+    }
+  ]
 }

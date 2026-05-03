@@ -1,0 +1,45 @@
+:host {
+  --icon-size: 24px;
+  --icon-clr: var(--slh-clr-text-a0, #1C1B1F);
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+}
+
+.material-symbols-outlined {
+  font-size: var(--icon-size);
+  color: var(--icon-clr);
+}
+
+.slh-icon-thin {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.slh-icon-light {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.slh-icon-regular {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.slh-icon-solid {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+

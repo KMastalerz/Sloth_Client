@@ -1,0 +1,8 @@
+<ng-content select="[leftContainer]"></ng-content>
+<div class="slh-input">
+  @if (icon()) {
+    <slh-icon class="slh-input-icon" [name]="icon()" type="regular"></slh-icon>
+  }
+  <ng-content select="[inputContainer]"></ng-content>
+</div>
+<ng-content select="[rightContainer]"></ng-content>

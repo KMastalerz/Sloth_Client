@@ -1,0 +1,82 @@
+:root { 
+    --slh-clr-primary-a0: #375AE6;
+    --slh-clr-primary-a10: #3251CF;
+    --slh-clr-primary-a20: #2C48B8;
+    --slh-clr-primary-a30: #273FA1;
+    --slh-clr-primary-a40: #21368A;
+    --slh-clr-primary-a50: #1C2D73;
+    --slh-clr-primary-a60: #16245C;
+    --slh-clr-primary-a70: #111B45;
+    --slh-clr-primary-a80: #0B122E;
+    --slh-clr-primary-a90: #060917;
+
+    --slh-clr-text-a0: #1C1B1F;
+    --slh-clr-text-a10: #333235;
+    --slh-clr-text-a20: #49494C;
+    --slh-clr-text-a30: #605F62;
+    --slh-clr-text-a40: #777679;
+    --slh-clr-text-a50: #8E8D8F;
+    --slh-clr-text-a60: #A4A4A5;
+    --slh-clr-text-a70: #BBBBBC;
+    --slh-clr-text-a80: #D2D1D2;
+    --slh-clr-text-a90: #E8E8E9;
+
+    --slh-clr-surface-a0: #FFFFFF;
+    --slh-clr-surface-a10: #F5F5F5;
+    --slh-clr-surface-a20: #EBEBEB;
+    --slh-clr-surface-a30: #D7D7D7;
+    --slh-clr-surface-a40: #B0B0B0;
+    --slh-clr-surface-a50: #8B8B8B;
+    --slh-clr-surface-a60: #676767;
+    --slh-clr-surface-a70: #4E4E4E;
+    --slh-clr-surface-a80: #363636;
+    --slh-clr-surface-a90: #202020;
+
+    --slh-clr-danger-a0: #B13535;
+    --slh-clr-danger-a20: #8E2A2A;
+    --slh-clr-danger-a40: #6A2020;
+    --slh-clr-danger-a60: #471515;
+    --slh-clr-danger-a80: #230B0B;
+
+    --slh-clr-success-a0: #1B7F5C;
+    --slh-clr-success-a20: #16664A;
+    --slh-clr-success-a40: #104C37;
+    --slh-clr-success-a60: #0B3325;
+    --slh-clr-success-a80: #051912;
+
+    --slh-clr-warning-a0: #B8871F;
+    --slh-clr-warning-a20: #936C19;
+    --slh-clr-warning-a40: #6E5113;
+    --slh-clr-warning-a60: #4A360C;
+    --slh-clr-warning-a80: #251B06;
+
+    --slh-clr-info-a0: #1E56A3;
+    --slh-clr-info-a20: #184582;
+    --slh-clr-info-a40: #123462;
+    --slh-clr-info-a60: #0C2241;
+    --slh-clr-info-a80: #061121;
+
+    --slh-clr-disabled-a0: #A4A4A5;
+    --slh-clr-disabled-a20: #8E8D8F;
+    --slh-clr-disabled-a40: #777679;
+    --slh-clr-disabled-a60: #605F62;
+    --slh-clr-disabled-a80: #49494C;
+
+    --slh-clr-on-disabled-a0: #FFFFFF;
+    --slh-clr-on-disabled-a20: #D2D1D2;
+    --slh-clr-on-disabled-a40: #BBBBBC;
+    --slh-clr-on-disabled-a60: #A4A4A5;
+    --slh-clr-on-disabled-a80: #8E8D8F;
+
+    --slg-overlay-base: 0,0,0;
+    --slh-clr-overlay-a0: rgb(var(--slg-overlay-base));
+    --slh-clr-overlay-a10: rgba(var(--slg-overlay-base), 0.03);
+    --slh-clr-overlay-a20: rgba(var(--slg-overlay-base), 0.06);
+    --slh-clr-overlay-a30: rgba(var(--slg-overlay-base), 0.12);
+    --slh-clr-overlay-a40: rgba(var(--slg-overlay-base), 0.24);
+    --slh-clr-overlay-a50: rgba(var(--slg-overlay-base), 0.36);
+    --slh-clr-overlay-a60: rgba(var(--slg-overlay-base), 0.48);
+    --slh-clr-overlay-a70: rgba(var(--slg-overlay-base), 0.58);
+    --slh-clr-overlay-a80: rgba(var(--slg-overlay-base), 0.67);
+    --slh-clr-overlay-a90: rgba(var(--slg-overlay-base), 0.76);
+}

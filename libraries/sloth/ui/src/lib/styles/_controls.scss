@@ -1,0 +1,26 @@
+// Field
+$control-field-message-offset-inline: var(--slh-control-field-message-offset-inline);
+$control-field-message-gap: var(--slh-control-field-gap);
+$control-field-content-gap: var(--slh-control-field-gap);
+$control-field-label-gap-left: var(--slh-control-field-label-gap-left);
+$control-field-label-gap-top: var(--slh-control-field-label-gap-top);
+$control-field-label-offset-inline: var(--slh-control-field-label-offset-inline);
+$control-field-label-color: var(--slh-clr-text-a0);
+
+// Input
+$control-input-height: var(--slh-control-input-height);
+$control-input-gap: var(--slh-control-input-gap);
+$control-input-inner-gap: var(--slh-control-input-inner-gap);
+$control-input-border-radius: var(--slh-control-input-radius);
+$control-input-padding:
+	var(--slh-control-input-padding-block)
+	var(--slh-control-input-padding-inline);
+$control-input-icon-size: var(--slh-control-input-icon-size);
+$control-input-button-size: var(--slh-control-input-button-size);
+
+// Input colors
+$control-input-surface: var(--slh-clr-overlay-a20);
+$control-input-button-surface: var(--slh-clr-overlay-a20);
+$control-input-button-surface-hover: var(--slh-clr-overlay-a30);
+$control-input-button-color: var(--slh-clr-text-a0);
+$control-input-icon-color: var(--slh-clr-text-a40);

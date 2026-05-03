@@ -1,0 +1,12 @@
+<slh-field-shell [label]="_label()"
+                 [labelPosition]="_labelPosition()!">
+    <slh-input-shell  fieldContainer
+                        [icon]="_icon()">
+        <input 
+            inputContainer
+            type="text"
+            [value]="value() ?? ''"
+            [placeholder]="_placeholder() ?? ''"
+            (input)="onInput($event)"/>
+    </slh-input-shell>
+</slh-field-shell>
