@@ -1,10 +1,9 @@
-import { Component, computed, input } from '@angular/core';
-import { FieldMessage } from '../field-message/field-message';
+import { Component, input } from '@angular/core';
 import { LabelPosition } from '../../../../models/control-options/base-control.options';
 
 @Component({
   selector: 'slh-field-shell',
-  imports: [FieldMessage],
+  imports: [],
   templateUrl: './field-shell.html',
   styleUrl: './field-shell.scss',
 })

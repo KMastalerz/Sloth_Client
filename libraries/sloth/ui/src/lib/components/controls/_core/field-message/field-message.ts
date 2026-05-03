@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'slh-field-message',
   imports: [],
   templateUrl: './field-message.html',
-  styleUrl: './field-message.scss',
+  styleUrl: './field-message.css',
 })
 export class FieldMessage {}
